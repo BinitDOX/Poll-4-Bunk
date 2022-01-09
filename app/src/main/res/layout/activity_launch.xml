@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_bunkername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_pollname"
+        android:layout_alignStart="@+id/et_pollname"
+        android:layout_below="@+id/et_pollname"
+        android:layout_marginTop="50sp"
+        android:ems="10"
+        android:hint="Enter Your Name..."
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/butt_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/butt_join"
+        android:layout_below="@+id/tv_or"
+        android:layout_marginRight="70sp"
+        android:layout_marginTop="65dp"
+        android:onClick="onCreateButtonClicked"
+        android:text="CREATE"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:text="Mass Bunk Poll Server"
+        android:textColor="?android:attr/colorMultiSelectHighlight"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/butt_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_bunkername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70sp"
+        android:layout_marginRight="70sp"
+        android:layout_marginTop="55sp"
+        android:onClick="onJoinButtonClicked"
+        android:text="JOIN"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_pollname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="65sp"
+        android:ems="10"
+        android:hint="Enter Bunk Title..."
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butt_join"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="----------OR----------"
+        android:textSize="20sp" />
+</RelativeLayout>
